@@ -1,0 +1,10 @@
+@for (tarefa of tarefas; track $index) {
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <span>{{ $index + 1 }}. {{ tarefa }}</span>
+      <button (click)="removerTarefa($index)">Remover</button>
+    </div>
+  }
+  
+  @empty {
+    <p>Nenhuma tarefa pendente</p>
+  }

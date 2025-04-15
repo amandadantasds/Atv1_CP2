@@ -1,0 +1,7 @@
+@for (usuario of usuarios; track usuario.nome) {
+    <p>Nome: {{ usuario.nome }}, Idade: {{ usuario.idade }}</p>
+  }
+  
+  @empty {
+    <p>Nenhum usuário cadastrado</p>
+  }

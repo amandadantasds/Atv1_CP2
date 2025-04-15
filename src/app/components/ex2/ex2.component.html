@@ -1,0 +1,7 @@
+@for (item of itens; track $index) {
+  <div>{{ $index + 1 }}. {{ item }}</div>
+}
+
+@empty {
+  <div>Nenhum item na Lista</div>
+}
